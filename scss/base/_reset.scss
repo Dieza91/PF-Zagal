@@ -1,32 +1,71 @@
 *
-  {
-      padding:0;
-      margin:0;
-      box-sizing:border-box;
-  }
-  body 
-  {
-    margin: 0;
-    font-family: "Akashi", Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
-    background-color: #f1f1f1;
-  }
-  html 
-  {
-      scroll-behavior: smooth;
-  }      
-  p
-  {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 32px;
-      margin-left:30px;
-      margin-right:30px;
-      margin-top:auto;
-  }
-  .center
-  {
-      height: 10%;
-      display: flex;
-      margin-left: auto;
-      margin-right: auto;
-  }
+{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body 
+{
+  margin: 0;
+  font-family: "Akashi", Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  background-color: #f1f1f1;
+}
+html 
+{
+    scroll-behavior: smooth;
+}      
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    margin-left:30px;
+    margin-right:30px;
+    margin-top:auto;
+}
+.center
+{
+    height: 10%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    margin-left:30px;
+    margin-right:30px;
+    margin-top:auto;
+}
+.center
+{
+    height: 10%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}  
+a
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    text-decoration: none;
+    color:#f1f1f1;
+}   
+nav 
+{
+    display: flex;
+    align-items: center;
+}
+h2
+{
+    background:#7ED957;
+    color:#f1f1f1;
+}    
+h3
+{
+    padding-left:30px;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+} 

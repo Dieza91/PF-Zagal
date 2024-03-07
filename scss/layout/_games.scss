@@ -1,22 +1,41 @@
-.buttonImageContainer {
+.buttonImageContainer 
+{
     position: absolute;
     top: 50%; /* Position at the vertical center */
     left: 50%; /* Position at the horizontal center */
     transform: translate(-50%, -50%); /* Center the element */
+    img 
+    {
+        cursor: pointer;
+        .buttonYoutube:active 
+        {
+            transform: scale(1.1); /* Increase size by 10% */
+            transition: transform 0.3s ease; /* Smooth transition */
+            :not(:active)::after {
+                content: ""; /* Required for pseudo-element */
+                animation: scaleBack 0.3s 1s forwards; /* Run animation after 1 second delay */
+                display: block; /* Display as block element */
+            }
+        }
+    }
 }
 
-.buttonImageContainer img {
-    cursor: pointer;
-    /* Add styles for image size, border, etc. */
+.buttonYoutube
+{
+    height:140px;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(20px); /* Initially moved down */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
-.buttonImageContainer img.buttonYoutube:active {
-    transform: scale(1.1); /* Increase size by 10% */
-    transition: transform 0.3s ease; /* Smooth transition */
+.fadeAndMoveUp {
+    animation: fadeInAndMoveUp  1s forwards; /* Apply animation */
 }
+.fadeAndMoveRight {
+    animation: fadeAndMoveRight 1s forwards; /* Apply animation */
+}
+.fadeAndMoveLeft {
+    animation: fadeAndMoveLeft 1s forwards; /* Apply animation */
+}       
 
-/* Apply animation after a delay when button is not pressed */
-.buttonImageContainer img.buttonYoutube:not(:active)::after {
-    content: ""; /* Required for pseudo-element */
-    animation: scaleBack 0.3s 1s forwards; /* Run animation after 1 second delay */
-    display: block; /* Display as block element */
-}
+
+

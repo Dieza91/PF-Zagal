@@ -31,6 +31,45 @@ p {
   margin-right: auto;
 }
 
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: auto;
+}
+
+.center {
+  height: 10%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+h2 {
+  background: #7ED957;
+  color: #f1f1f1;
+}
+
+h3 {
+  padding-left: 30px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 @font-face {
   font-family: "Akashi";
   src: url(../fonts/akashi.ttf);
@@ -76,11 +115,14 @@ li {
   display: inline;
   margin-right: 30px;
 }
-
 li a {
   font-family: "Akashi", Courier, monospace;
   font-size: 28px;
   text-decoration: none;
+}
+li a :visited {
+  color: inherit;
+  text-decoration: none; /* O cualquier otra decoración que desees */
 }
 
 #esloganEmpresa {
@@ -99,6 +141,31 @@ li a {
   font-style: normal;
 }
 
+.indexHeader {
+  padding-top: 100px;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.box.header1, .box.header2, .box.header3 {
+  background: #FD7E3E;
+  margin-right: 30px;
+  margin-left: 30px;
+  height: 140px;
+  display: flex;
+}
+
+.box.header3 {
+  padding-left: 90px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -115,6 +182,13 @@ footer {
   text-align: center;
   justify-content: center;
   margin-bottom: 5px;
+}
+.social .img {
+  min-width: 20px; /* Adjust the minimum width as needed */
+  min-height: 20px; /* Adjust the minimum height as needed */
+  max-width: 100%;
+  flex-shrink: 0;
+  margin: 0 5px; /* Adjust the margin as needed */
 }
 
 .facebook {
@@ -178,6 +252,82 @@ footer {
   animation: shake 2.5s ease infinite;
 }
 
+.centeredButton1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 20px;
+  margin-left: -45px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: transparent; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: 2px solid white;
+  border-radius: 3px 15px; /* Redondea las esquinas */
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.centeredButton2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 20px;
+  margin-left: -80px;
+  opacity: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: transparent; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: 2px solid white;
+  border-radius: 3px 15px; /* Redondea las esquinas */
+  cursor: pointer;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+.centeredButton3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 20px;
+  margin-left: -80px;
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Add transition effect */
+  background-color: transparent; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: 2px solid white;
+  border-radius: 3px 15px; /* Redondea las esquinas */
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.centeredButton {
+  position: absolute;
+  bottom: 0; /* Position at the bottom of the container */
+  left: 50%; /* Horizontally center the button */
+  transform: translateX(-50%); /* Adjust to perfectly center horizontally */
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Add transition effect */
+  background-color: transparent; /* Background color */
+  color: white; /* Text color */
+  border: 2px solid white; /* Border */
+  border-radius: 3px 15px; /* Rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  padding: 5px 10px; /* Padding */
+  font-size: 16px; /* Font size */
+}
+
+/* Styling for specific buttons */
+.centeredButton1 {
+  margin-left: -45px; /* Adjust left margin for button 1 */
+}
+
+.centeredButton2 {
+  margin-left: -80px; /* Adjust left margin for button 2 */
+}
+
 .grid {
   display: grid;
   grid-template-columns: 40px 10% 78% 10%;
@@ -207,7 +357,7 @@ footer {
   color: white;
   height: 74vh;
   display: flex;
-  justify-content: flex; /* Align items to the left */
+  justify-content: flex;
   align-items: flex-end; /* Align items to the bottom */
 }
 
@@ -241,7 +391,6 @@ footer {
   margin: 60px;
   text-align: center;
 }
-
 .textOurStory h2 {
   font-size: 18px;
   margin: 15px;
@@ -250,7 +399,6 @@ footer {
   text-align: left;
   background: #f1f1f1;
 }
-
 .textOurStory p {
   font-size: 18px;
   margin-bottom: 30px;
@@ -264,7 +412,6 @@ footer {
   margin: 60px;
   text-align: center;
 }
-
 .textIndexPageGame1 p {
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
@@ -301,86 +448,6 @@ footer {
   width: auto; /* Allow the image to scale proportionally */
 }
 
-.buttonImageContainer {
-  position: absolute;
-  top: 50%; /* Position at the vertical center */
-  left: 50%; /* Position at the horizontal center */
-  transform: translate(-50%, -50%); /* Center the element */
-}
-
-.buttonImageContainer img {
-  cursor: pointer;
-  /* Add styles for image size, border, etc. */
-}
-
-.buttonImageContainer img.buttonYoutube:active {
-  transform: scale(1.1); /* Increase size by 10% */
-  transition: transform 0.3s ease; /* Smooth transition */
-}
-
-/* Apply animation after a delay when button is not pressed */
-.buttonImageContainer img.buttonYoutube:not(:active)::after {
-  content: ""; /* Required for pseudo-element */
-  animation: scaleBack 0.3s 1s forwards; /* Run animation after 1 second delay */
-  display: block; /* Display as block element */
-}
-
-p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 32px;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-top: auto;
-}
-
-.center {
-  height: 10%;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.indexHeader {
-  padding-top: 100px;
-}
-
-a {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  text-decoration: none;
-  color: #f1f1f1;
-}
-
-.headerContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding-top: 10px;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-}
-
-/*#indexHeader 
-{
-    transform: rotate(-90deg);
-    white-space: nowrap;
-    transform-origin: left top;
-    margin-left:-180px;
-    margin-top:180px;
-    padding-top: 190px;
-}
-*/
-h2 {
-  background: #7ED957;
-  color: #f1f1f1;
-}
-
 .textInLine {
   padding-bottom: 100vh;
   background: #FD7E3E;
@@ -413,23 +480,9 @@ h2 {
   margin-left: 10px;
 }
 
-.Social img {
-  min-width: 20px; /* Adjust the minimum width as needed */
-  min-height: 20px; /* Adjust the minimum height as needed */
-  max-width: 100%;
-  flex-shrink: 0;
-  margin: 0 5px; /* Adjust the margin as needed */
-}
-
 .projectsIndex {
   display: flex;
   flex-direction: row;
-}
-
-h3 {
-  padding-left: 30px;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .textGame1 {
@@ -444,23 +497,6 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.box.header1, .box.header2, .box.header3 {
-  background: #FD7E3E;
-  margin-right: 30px;
-  margin-left: 30px;
-  height: 140px;
-  display: flex;
-}
-
-.box.header3 {
-  padding-left: 90px;
-}
-
-li a:visited {
-  color: inherit;
-  text-decoration: none; /* O cualquier otra decoración que desees */
 }
 
 #game1 {
@@ -484,6 +520,12 @@ li a:visited {
   justify-content: center;
   align-items: center;
   text-align: center; /* To center text within the container */
+}
+.image-container img {
+  width: 100%;
+  border-radius: 20px; /* Esto hace que el borde se vuelva circular */
+  border: 4px solid #7ED957;
+  transition: filter 0.3s ease;
 }
 
 .image-container img {
@@ -530,6 +572,19 @@ li a:visited {
   display: block; /* Make the image a block-level element */
   height: auto; /* Preserve the aspect ratio of the image */
 }
+#game2 :hover {
+  filter: brightness(35%) blur(2px); /* Adjust brightness to make the image darker */
+}
+#game2 :hover::before {
+  content: ""; /* Create a pseudo-element to act as the overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4B3F3B; /* Black color with 50% opacity */
+  transition: background-color 0.3s ease;
+}
 
 #game3 {
   width: 30%;
@@ -542,21 +597,6 @@ li a:visited {
   transition: filter 0.3s ease;
   display: block; /* Make the image a block-level element */
   height: auto; /* Preserve the aspect ratio of the image */
-}
-
-#game2:hover {
-  filter: brightness(35%) blur(2px); /* Adjust brightness to make the image darker */
-}
-
-#game2:hover::before {
-  content: ""; /* Create a pseudo-element to act as the overlay */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #4B3F3B; /* Black color with 50% opacity */
-  transition: background-color 0.3s ease;
 }
 
 .columnText {
@@ -611,9 +651,6 @@ li a:visited {
   z-index: 2;
   margin-right: 800px;
   margin-top: -240px;
-}
-
-#robofrogIndexLogo2 {
   transition: transform 0.3s ease;
 }
 
@@ -635,7 +672,6 @@ li a:visited {
   margin-top: -380px;
   margin-left: 400px;
 }
-
 .textAboutPage p {
   font-size: 22px;
   padding-top: 20px;
@@ -712,7 +748,6 @@ li a:visited {
   width: 40%;
   margin-left: 40px;
 }
-
 .contactInformation p {
   font-size: 20px;
 }
@@ -728,37 +763,6 @@ li a:visited {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
-
-.input-with-label {
-  position: relative;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center items horizontally */
-}
-
-.input-with-label label {
-  pointer-events: none; /* Make sure label doesn't interfere with input */
-  color: #f1f1f1;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.input-with-label input,
-.input-with-label textarea {
-  width: 80%; /* Make input full width */
-  height: 40px; /* Set common height for inputs */
-}
-
-.input-with-label textarea#text {
-  height: 180px; /* Set the desired height for the text area */
-  resize: vertical; /* Allow vertical resizing */
-}
-
-.input-with-label input[type=file] {
-  height: auto; /* Adjust height for file input */
-}
-
 .contactText button {
   background-color: transparent; /* Color de fondo */
   color: white; /* Color del texto */
@@ -769,59 +773,37 @@ li a:visited {
   font-size: 22px;
 }
 
+.input-with-label {
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+.input-with-label label {
+  pointer-events: none; /* Make sure label doesn't interfere with input */
+  color: #f1f1f1;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.input-with-label label textarea {
+  width: 80%; /* Make input full width */
+  height: 40px; /* Set common height for inputs */
+}
+.input-with-label label textarea #text {
+  height: 180px; /* Set the desired height for the text area */
+  resize: vertical; /* Allow vertical resizing */
+}
+.input-with-label input {
+  width: 80%; /* Make input full width */
+  height: 40px; /* Set common height for inputs */
+}
+.input-with-label input[type=file] {
+  height: auto; /* Adjust height for file input */
+}
+
 .presentation div:hover button {
   opacity: 1;
-}
-
-.centeredButton1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: 20px;
-  margin-left: -45px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  background-color: transparent; /* Color de fondo */
-  color: white; /* Color del texto */
-  border: 2px solid white;
-  border-radius: 3px 15px; /* Redondea las esquinas */
-  cursor: pointer;
-  padding: 5px 10px;
-  font-size: 16px;
-}
-
-.centeredButton2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: 20px;
-  margin-left: -80px;
-  opacity: 0;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  background-color: transparent; /* Color de fondo */
-  color: white; /* Color del texto */
-  border: 2px solid white;
-  border-radius: 3px 15px; /* Redondea las esquinas */
-  cursor: pointer;
-  padding: 5px 10px;
-  font-size: 16px;
-}
-
-.centeredButton3 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: 20px;
-  margin-left: -80px;
-  opacity: 0;
-  transition: opacity 0.3s ease; /* Add transition effect */
-  background-color: transparent; /* Color de fondo */
-  color: white; /* Color del texto */
-  border: 2px solid white;
-  border-radius: 3px 15px; /* Redondea las esquinas */
-  cursor: pointer;
-  padding: 5px 10px;
 }
 
 .imageContainer:hover .centeredButton {
@@ -873,6 +855,33 @@ button:not(:active)::after {
   transition: transform 0.3s ease; /* Smooth transition */
 }
 
+.imageContainer {
+  position: relative;
+  display: inline-block; /* Ensure that the container only takes up necessary space */
+  margin: 20px; /* Adjust spacing between image containers */
+  text-align: center; /* To center text within the container */
+}
+
+/* General styling for centered buttons */
+.buttonImageContainer {
+  position: absolute;
+  top: 50%; /* Position at the vertical center */
+  left: 50%; /* Position at the horizontal center */
+  transform: translate(-50%, -50%); /* Center the element */
+}
+.buttonImageContainer img {
+  cursor: pointer;
+}
+.buttonImageContainer img .buttonYoutube:active {
+  transform: scale(1.1); /* Increase size by 10% */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+.buttonImageContainer img .buttonYoutube:active :not(:active)::after {
+  content: ""; /* Required for pseudo-element */
+  animation: scaleBack 0.3s 1s forwards; /* Run animation after 1 second delay */
+  display: block; /* Display as block element */
+}
+
 .buttonYoutube {
   height: 140px;
   opacity: 0; /* Initially hidden */
@@ -890,39 +899,6 @@ button:not(:active)::after {
 
 .fadeAndMoveLeft {
   animation: fadeAndMoveLeft 1s forwards; /* Apply animation */
-}
-
-.imageContainer {
-  position: relative;
-  display: inline-block; /* Ensure that the container only takes up necessary space */
-  margin: 20px; /* Adjust spacing between image containers */
-  text-align: center; /* To center text within the container */
-}
-
-/* General styling for centered buttons */
-.centeredButton {
-  position: absolute;
-  bottom: 0; /* Position at the bottom of the container */
-  left: 50%; /* Horizontally center the button */
-  transform: translateX(-50%); /* Adjust to perfectly center horizontally */
-  opacity: 0;
-  transition: opacity 0.3s ease; /* Add transition effect */
-  background-color: transparent; /* Background color */
-  color: white; /* Text color */
-  border: 2px solid white; /* Border */
-  border-radius: 3px 15px; /* Rounded corners */
-  cursor: pointer; /* Change cursor on hover */
-  padding: 5px 10px; /* Padding */
-  font-size: 16px; /* Font size */
-}
-
-/* Styling for specific buttons */
-.centeredButton1 {
-  margin-left: -45px; /* Adjust left margin for button 1 */
-}
-
-.centeredButton2 {
-  margin-left: -80px; /* Adjust left margin for button 2 */
 }
 
 @keyframes scaleBack {

@@ -41,13 +41,19 @@ li
     font-style: normal;
     display:inline;
     margin-right:30px;
+    a
+    {
+        font-family: 'Akashi', Courier, monospace;
+        font-size:28px;
+        text-decoration: none;
+        :visited 
+        {
+            color: inherit;
+            text-decoration: none; /* O cualquier otra decoración que desees */
+        }     
+    }
 }
-li a
-{
-    font-family: 'Akashi', Courier, monospace;
-    font-size:28px;
-    text-decoration: none;
-}
+
 #esloganEmpresa
 {
     display:flex;
@@ -64,4 +70,30 @@ li a
     font-size: 22px;
     font-weight: bold;
     font-style: normal;
-}                
+}   
+.indexHeader
+{
+    padding-top: 100px;
+}
+.headerContainer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    padding-top:10px;
+}   
+.box.header1, .box.header2, .box.header3
+{
+    background:#FD7E3E;
+    margin-right:30px;
+    margin-left:30px;
+    height: 140px;
+    display:flex;
+}
+.box.header3
+{
+    padding-left: 90px;
+}
+     

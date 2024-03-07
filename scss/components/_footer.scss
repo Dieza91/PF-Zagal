@@ -1,44 +1,53 @@
 footer
-        {
-            display: flex;
-            flex-direction:column;
-            align-items: center;
-            text-align: center;
-            color: #f1f1f1;
-            background-color: #FD7E3E;
-            justify-content: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .social
-        {
-            align-items: center;
-            text-align: center;
-            justify-content: center;
-            margin-bottom:5px;
-        }
-        .facebook
-        {
-            height: 25px;
-            padding-right:5px;
-        }
-        .instagram
-        {
-            height: 25px;
-            padding-right:5px;
-        }
-        .x
-        {
-            height: 25px;
-        }
-        .email
-        {
-            height: 40px;
-        }
-        .copiryght
-        {
-            text-align: center;
-            font-size: 19px;
-            padding-top:5px;
-            flex-shrink: 0;
-            margin-bottom:0px;
-        }
+{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    color: #f1f1f1;
+    background-color: #FD7E3E;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.social
+{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom:5px;
+    .img 
+    {
+        min-width: 20px; /* Adjust the minimum width as needed */
+        min-height: 20px; /* Adjust the minimum height as needed */
+        max-width: 100%;
+        flex-shrink: 0;
+        margin: 0 5px; /* Adjust the margin as needed */
+    }     
+}
+.facebook
+{
+    height: 25px;
+    padding-right:5px;
+}
+.instagram
+{
+    height: 25px;
+    padding-right:5px;
+}
+.x
+{
+    height: 25px;
+}
+.email
+{
+    height: 40px;
+}
+.copiryght
+{
+    text-align: center;
+    font-size: 19px;
+    padding-top:5px;
+    flex-shrink: 0;
+    margin-bottom:0px;
+}
+  

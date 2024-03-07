@@ -1,0 +1,183 @@
+@media (max-width: 1141px) 
+        {
+            #esloganEmpresa 
+            {
+              display: none;
+            }
+            .gridHeader 
+            {
+                display: flex;
+                flex-direction: column;
+            }
+            .box.header2
+            {
+                background:none;
+                padding-left: 0px;
+                margin-top:-140px;
+            }
+            .box.header3
+            {
+                margin-right:30px;
+                margin-left:30px;
+                height: 60px;
+                padding-left: 0px;
+            }
+
+            ul
+            {
+                grid-column: span 3;
+            }
+            #roboFrogLogo 
+            {
+                grid-column: span 3;
+                max-width: none; /* Elimina la restricción de tamaño máximo al hacer wrap */
+            }
+            .indexPage
+            {
+                flex-direction:column-reverse;
+                align-items: center;
+                justify-content: center;
+                text-align:center;
+            }
+            .textIndexPage
+            {
+                padding-bottom:30px;
+                padding-top:20px;
+            }
+            .grid
+            {
+                display:grid;
+                grid-template-columns: 0px 0% 100% 0%;
+                grid-template-rows: repeat(6, auto);
+            }
+            .box.b1, .box.b4, .box.b7, .box.b10, .box.b13, .box.b16, .box.b19, .box.b22, .box.b25,.box.b28,.box.b31,.box.b34, .box.b40, .box.b43,.box.b46,.box.b37, .box.b49, .box.b52
+            {
+                background: white;
+            }
+            .combinedContainer
+            {
+                padding-top: 60px;
+                flex-direction:column;
+                justify-content: center;
+                text-align:center;
+            }
+            .combinedContainer1
+            {
+                margin-top:1200px;
+            }
+            #game3Container
+            {
+                display:none;
+            }
+            .seccion1
+            {
+                margin-top: 400px;
+            }
+            .textAboutPage p
+            {
+                font-size:20px;   
+            }
+            #game1
+            {
+            min-width: 300px;
+            }
+            #game2
+            {
+            min-width: 300px;
+            }
+            .contactMail
+            {
+                flex-direction: column;
+            }
+            #robofrogIndexLogo2
+            {
+                width:500px;
+                z-index:2;
+                margin-right: 0px;
+                margin-top:-200px;
+            }
+            .textAboutPage
+            {
+                margin-top:40px;
+                margin-left:0px;
+            }
+            .textAboutPage p
+            {
+                padding-bottom:0px; 
+                padding-left:0px;     
+            }
+            .presentation
+            {
+                margin-left: 0px; /* Ajusta el valor según sea necesario */
+            }
+            #imageDiego
+            {
+                display:none;
+            }
+            #imageJoshua
+            {
+                display:none;
+            }
+            #imageFranco
+            {
+                display:none;
+            }
+            .contactMail
+            {
+                font-size:32px;
+                height:1040px;
+                margin-top:100px;
+                flex-direction: column;
+                margin-bottom:60px;
+                width: 90%;
+            }
+            .contactInformation
+            {
+                width:90%;
+                margin-top:100px;
+                margin-left:0px;
+            }
+            .contactText
+            {
+                width:80%;
+                margin-right:0px;
+                margin-bottom:80px;
+            }
+            .textIndexPageGame1 
+            {
+                padding: 20px 40px;
+                margin:40px;
+            }
+            .textOurStory
+            {
+                max-width:100%;
+                margin:0px;
+            }
+            .textOurStory p
+            {
+                margin-bottom:10px;
+            } 
+            #ourStoryButton
+            {
+                margin:5px 20px;
+                margin-top: 15px;
+            }
+            .indexPageGame1 
+            {
+                justify-content: center; /* Align items to the left */
+            }
+            .indexPageGame2 
+            {
+                justify-content: center; /* Align items to the left */
+            }
+            .hover-text 
+            {
+                display:none;
+            }
+            #verMasButton 
+            {
+                opacity: 1; /* Initially hidden */
+            }
+        }
+
+    

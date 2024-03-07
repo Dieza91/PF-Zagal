@@ -43,35 +43,40 @@
     padding: 40px;
     margin:60px;
     text-align:center;
+    h2
+    {
+        font-size:18px;
+        margin:15px;
+        color:black;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align:left;
+        background:#f1f1f1;
+    } 
+    p
+    {
+        font-size:18px;
+        margin-bottom:30px;
+    }
 }
-.textOurStory h2
+
+
+.textIndexPageGame1 
 {
-    font-size:18px;
-    margin:15px;
-    color:black;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align:left;
-    background:#f1f1f1;
-} 
-.textOurStory p
-{
-    font-size:18px;
-    margin-bottom:30px;
-}
-.textIndexPageGame1 {
     border-radius: 80px;
     max-width: 600px;
     padding: 40px;
     background-color: rgba(75, 63, 59, 0.7);
     margin:60px;
     text-align:center;
+    p 
+    {
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0; /* Remove default margin */
+    }
 }
 
-.textIndexPageGame1 p {
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0; /* Remove default margin */
-}
+
 .textIndexPage
 {
     padding-top: 1px;
@@ -101,4 +106,444 @@
     max-height: 650px; /* Set your desired height */
     height: auto; /* Allow the image to scale proportionally */
     width: auto; /* Allow the image to scale proportionally */
-}        
+}   
+.textInLine 
+{
+    padding-bottom:100vh;
+    background:#FD7E3E;
+    color:#f1f1f1;
+    font-size: 28px; 
+    width: 40px;
+}
+.projectsTextInLine
+{
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    text-align: left;
+    margin-top:180px;
+    margin-left:10px;
+}
+.aboutTextInLine
+{
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    text-align: left;
+    margin-top:180px;
+    margin-left:10px;
+}
+.contactTextInLine
+{
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    text-align: left;
+    margin-top:180px;
+    margin-left:10px;
+}    
+.projectsIndex
+{
+    display:flex;
+    flex-direction:row;
+    
+}
+
+.textGame1
+{
+    margin-top:35px;
+    background-color:#7ED957;
+    height:275px;
+} 
+.box
+{
+    height:200px;
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#game1
+{
+    width: 30%;
+    min-height:600px;
+    margin:auto;
+    border-radius: 20px; /* Esto hace que el borde se vuelva circular */
+    border: 4px solid #7ED957;
+    min-width: 400px;
+    position: relative;
+    transition: filter 0.3s ease;
+    display: block; /* Make the image a block-level element */
+    height: auto; /* Preserve the aspect ratio of the image */
+}
+.image-container{
+    position: relative;
+    display: inline-block; /* Ensure that the container only takes up necessary space */
+    margin: 20px; /* Adjust spacing between image containers */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* To center text within the container */
+    img{
+        width: 100%;
+        border-radius: 20px; /* Esto hace que el borde se vuelva circular */
+        border: 4px solid #7ED957;
+        transition: filter 0.3s ease;
+      }
+  }
+  .image-container img{
+    width: 100%;
+    border-radius: 20px; /* Esto hace que el borde se vuelva circular */
+    border: 4px solid #7ED957;
+    transition: filter 0.3s ease;
+  }
+  .image-container:hover img{
+    filter: brightness(50%) blur(2px); /* Adjust brightness to make the image darker */
+  }
+  .image-container:hover .hover-text{
+    opacity: 0.85; /* Show the text when the container is hovered over */
+  }
+  .image-container:hover #verMasButton{
+    opacity: 0.85; /* Show the text when the container is hovered over */
+  }
+.hover-text 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Text color */
+    font-size: 18px; /* Text font size */
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+    font-family: Arial, Helvetica, sans-serif;
+    width:70%;
+}
+#game2
+{
+    width: 30%;
+    min-height:600px;
+    margin:auto;
+    border-radius: 20px; /* Esto hace que el borde se vuelva circular */
+    border: 4px solid #7ED957;
+    min-width: 400px;
+    position: relative;
+    transition: filter 0.3s ease;
+    display: block; /* Make the image a block-level element */
+    height: auto; /* Preserve the aspect ratio of the image */
+    :hover 
+    {
+        filter: brightness(35%)blur(2px); /* Adjust brightness to make the image darker */
+    }
+    :hover::before 
+    {
+        content: ""; /* Create a pseudo-element to act as the overlay */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #4B3F3B; /* Black color with 50% opacity */
+        transition: background-color 0.3s ease;
+    }
+}
+#game3
+{
+    width: 30%;
+    min-height:600px;
+    margin:auto;
+    border-radius: 20px; /* Esto hace que el borde se vuelva circular */
+    border: 4px solid #7ED957;
+    min-width: 400px;
+    position: relative;
+    transition: filter 0.3s ease;
+    display: block; /* Make the image a block-level element */
+    height: auto; /* Preserve the aspect ratio of the image */
+}
+
+.columnText
+{
+    transform: rotate(-90deg);
+    padding-top: 35px;
+    color:white;
+    font-size:28px;
+}       
+  
+.combinedContainer
+{
+    padding-top: 145px;
+    display: flex;
+    flex-direction:row;
+    background:white;
+    grid-column: 3 / span 1; /* El contenedor combinado ocupa la tercera columna */
+    grid-row: 1 / span 8; /* El contenedor combinado ocupa 5 filas */
+    justify-content: center;
+    align-items:center;
+    margin: auto; 
+    margin-top:0;
+    
+}
+.combinedContainer1
+{
+    display: flex;
+    flex-direction:column;
+    grid-column: 3 / span 1; /* El contenedor combinado ocupa la tercera columna */
+    grid-row: 1 / span 22; /* El contenedor combinado ocupa 5 filas */
+    align-items: center;
+    justify-content:center;
+    margin-top:1260px;
+}
+.seccion1
+{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    margin-top: -100px;
+}
+#ContactColumnText
+{
+    margin-top:80px;
+}
+
+.box.b1, .box.b4, .box.b7, .box.b10, .box.b13, .box.b16, .box.b19, .box.b22, .box.b25,.box.b28,.box.b31,.box.b34, .box.b40, .box.b43,.box.b46,.box.b37, .box.b49, .box.b52
+{
+    background: #7ED957;
+}
+#robofrogIndexLogo2
+{
+    display: flex;
+    width: 500px;
+    z-index: 2;
+    margin-right: 800px;
+    margin-top: -240px;
+    transition: transform 0.3s ease;
+  }
+  #robofrogIndexLogo2:hover
+  {
+    transform: rotate(360deg);
+  }
+  
+.textAboutPage
+{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    background:#7ED957;
+    color:white;
+    border-radius: 20px;
+    text-align:center;
+    display:flex;
+    padding:20px;
+    z-index:1;
+    margin-top:-380px;
+    margin-left:400px;
+    p
+    {
+        font-size:22px;
+        padding-top:20px;
+        padding-left:80px; 
+        display:flex;     
+    }
+}
+
+
+.firstBox
+{
+    margin-left:auto;
+    position:relative;
+    background:#7ED957;
+}
+.diegoContainer
+{
+    position: relative;
+    display: inline-block;
+}
+
+
+.presentation
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: space around;
+    align-items: left;
+    margin-left: 640px; /* Ajusta el valor según sea necesario */
+    margin-top:-40px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left:580px;
+}
+.secondBox
+{
+    margin-left:auto;
+    position:relative;
+}
+.joshuaContainer
+{
+    position: relative;
+    display: inline-block;
+}
+#imageDiego
+{
+    height:300px;
+    z-index:0;
+}
+#imageJoshua
+{
+    height:300px;
+    margin-left:-90px;
+    z-index:0;
+}
+#imageFranco
+{
+    height:300px;
+    margin-left:-90px;
+    z-index:0;
+}
+
+ /*---------------------------*/
+.contactMail
+{
+    background:#FD7E3e;
+    color:white;
+    font-size:32px;
+    margin-top:-10px;
+    width: 100%;
+    height:500px;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    text-align: center;
+    border-radius:80px;
+    justify-content: space-between;
+}
+.contactInformation
+{
+    width:40%;
+    margin-left:40px;
+    p
+    {
+        font-size:20px;
+    }
+}
+
+#robofrogIndexLogo3
+{
+    height:240px;
+    margin-bottom:20px;
+}
+.contactText
+{
+    width:55%;
+    margin-right:80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    button 
+    {
+        background-color: transparent; /* Color de fondo */
+        color: white; /* Color del texto */
+        border: 2px solid white; 
+        border-radius: 3px 15px; /* Redondea las esquinas */
+        cursor: pointer;
+        padding:0px 40px;
+        font-size:22px;
+    }
+}
+.input-with-label 
+{
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    label 
+    {
+        pointer-events: none; /* Make sure label doesn't interfere with input */
+        color: #f1f1f1;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        textarea 
+        {
+            width: 80%; /* Make input full width */
+            height: 40px; /* Set common height for inputs */
+            #text 
+            {
+                height: 180px; /* Set the desired height for the text area */
+                resize: vertical; /* Allow vertical resizing */
+            }
+        }
+        
+    }
+    input
+    {
+        width: 80%; /* Make input full width */
+        height: 40px; /* Set common height for inputs */
+    }
+    input[type="file"] 
+    {
+        height: auto; /* Adjust height for file input */
+    }
+    
+}
+.presentation div:hover button 
+{
+    opacity: 1;
+}
+.imageContainer:hover .centeredButton 
+{
+    opacity: 1; /* Change opacity to 1 when hovering over the image container */
+}
+/* Apply the animation to the li elements */
+.box.header3 san ul li 
+{
+    list-style: none;
+}
+
+.box.header3 san ul li:hover 
+{
+    animation: shake 0.5s ease;
+}
+/* Apply the fade-in and move-up animation to the image */
+#robofrogIndexLogo 
+{
+    opacity: 0; /* Initially set opacity to 0 */
+    animation: fadeInAndMoveUp 4s ease forwards; /* Apply the fade-in and move-up animation */
+}
+.contactMail #robofrogIndexLogo3 
+{
+    transition: transform 0.3s ease; /* Transición suave de la propiedad transform */
+}
+
+.contactMail:hover #robofrogIndexLogo3 
+{
+    transform: scale(1.1); /* Escala la imagen al 110% cuando se hace hover sobre contactMail */
+}
+
+.contactMail:not(:hover) #robofrogIndexLogo3 
+{
+    transform: scale(1); /* Devuelve la imagen a su tamaño original cuando no hay hover sobre contactMail */
+}
+/* Apply styles when the button is pressed */
+button:active 
+{
+    transform: scale(1.1); /* Increase size by 10% */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+/* Apply animation after a delay when button is not pressed */
+button:not(:active)::after 
+{
+    content: ""; /* Required for pseudo-element */
+    animation: scaleBack 0.3s 1s forwards; /* Run animation after 1 second delay */
+    display: block; /* Display as block element */
+}
+.social img:active 
+{
+    transform: scale(1.3); /* Increase size by 10% */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+.imageContainer 
+{
+    position: relative;
+    display: inline-block; /* Ensure that the container only takes up necessary space */
+    margin: 20px; /* Adjust spacing between image containers */
+    text-align: center; /* To center text within the container */
+}
+
+/* General styling for centered buttons */
