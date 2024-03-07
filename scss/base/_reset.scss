@@ -1,0 +1,32 @@
+*
+  {
+      padding:0;
+      margin:0;
+      box-sizing:border-box;
+  }
+  body 
+  {
+    margin: 0;
+    font-family: "Akashi", Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background-color: #f1f1f1;
+  }
+  html 
+  {
+      scroll-behavior: smooth;
+  }      
+  p
+  {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 32px;
+      margin-left:30px;
+      margin-right:30px;
+      margin-top:auto;
+  }
+  .center
+  {
+      height: 10%;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+  }

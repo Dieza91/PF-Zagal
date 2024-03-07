@@ -1,0 +1,16 @@
+
+.grid
+{
+    display:grid;
+    grid-template-columns: 40px 10% 78% 10%;
+    grid-template-rows: repeat(5, auto);
+    background:white;
+}
+.gridHeader
+{
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: repeat(5, auto);
+    background:#FD7E3E;
+    align-items: center;
+}        
